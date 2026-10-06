@@ -109,38 +109,42 @@
 
                                 <tr class="hover:bg-[#FFFCF4] transition">
 
+                                    <!-- No -->
                                     <td class="px-6 py-4 text-[#6B8193]">
                                         {{ $loop->iteration }}
                                     </td>
 
+                                    <!-- Judul -->
                                     <td class="px-6 py-4 font-semibold text-[#3F6F91]">
                                         {{ $book->title }}
                                     </td>
 
+                                    <!-- Penulis -->
                                     <td class="px-6 py-4 text-[#5F7180]">
                                         {{ $book->author }}
                                     </td>
 
+                                    <!-- Penerbit -->
                                     <td class="px-6 py-4 text-[#5F7180]">
                                         {{ $book->publisher }}
                                     </td>
 
+                                    <!-- Tahun -->
                                     <td class="px-6 py-4 text-[#5F7180]">
                                         {{ $book->year }}
                                     </td>
 
+                                    <!-- Stok -->
                                     <td class="px-6 py-4 text-[#5F7180]">
                                         {{ $book->stock }}
                                     </td>
 
-                                    <td class="px-6 py-4">
-
-                                        <span class="inline-flex px-3 py-1 rounded-full bg-[#E2EFF7] text-[#4F7895] text-xs font-semibold">
-                                            {{ $book->category->name }}
-                                        </span>
-
+                                    <!-- Kategori -->
+                                    <td class="px-6 py-4 text-[#5F7180]">
+                                        {{ $book->category->name }}
                                     </td>
 
+                                    <!-- Aksi -->
                                     <td class="px-6 py-4">
 
                                         <div class="flex items-center justify-center gap-2">
